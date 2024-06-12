@@ -80,7 +80,7 @@ public class BookManagement {
       int bookId = Integer.parseInt(scanner.nextLine());
       int indexDelete = getIndexById(bookId);
       if (indexDelete >= 0){
-          for (int i = 0; i<currenIndex ; i++){
+          for (int i = indexDelete; i<currenIndex ; i++){
               arrBooks[i]=arrBooks[i+1];
           }
           currenIndex--;
